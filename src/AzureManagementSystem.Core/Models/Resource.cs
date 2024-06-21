@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureManagementSystem.Data.Models
+namespace AzureManagementSystem.Core.Models
 {
     public class Resource
     {
