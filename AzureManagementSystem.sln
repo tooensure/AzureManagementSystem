@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D142008
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C2467FE-CFF7-4959-A6BE-644EAA975B10}"
 	ProjectSection(SolutionItems) = preProject
+		builds\resource-group.ps1 = builds\resource-group.ps1
 		docs\structure.md = docs\structure.md
 	EndProjectSection
 EndProject
@@ -20,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureManagementSystem.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.Api", "src\Identity.Api\Identity.Api.csproj", "{70E8B305-4253-416B-AF0D-D5285C6BE908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureManagementSystem.Cmdlets", "src\AzureManagementSystem.Cmdlets\AzureManagementSystem.Cmdlets.csproj", "{5B99D898-ED7C-43D0-8DA9-66F06DDFDB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureManagementSystem.Cmdlets", "src\AzureManagementSystem.Cmdlets\AzureManagementSystem.Cmdlets.csproj", "{5B99D898-ED7C-43D0-8DA9-66F06DDFDB65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
