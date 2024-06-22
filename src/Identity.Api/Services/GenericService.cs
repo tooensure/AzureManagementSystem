@@ -1,6 +1,6 @@
-﻿using Azure.Identity;
-using Azure.ResourceManager;
-using AzureManagementSystem.Core.Interfaces.IRepositories;
+﻿using AzureManagementSystem.Core.Interfaces.IRepositories;
+using AzureManagementSystem.Core.Interfaces.IServices;
+using AzureManagementSystem.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +8,16 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureManagementSystem.Domain.Repositories
+namespace AzureManagementSystem.Data.Services
 {
-    public abstract class GenericRepository<T> : IRepository<T> where T : class
+    public abstract class GenericService<T> : IService<T> where T : class
     {
+        private readonly IRepository<T> _repository;
+
+        protected GenericService(IRepository<T> repository)
+        {
+            _repository = repository;
+        }
 
         public Task<T> CreateAsync(T entity)
         {

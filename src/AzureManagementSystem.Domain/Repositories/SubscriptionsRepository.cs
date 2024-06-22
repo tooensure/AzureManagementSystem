@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace AzureManagementSystem.Domain.Repositories
 {
-    public class SubscriptionsRepository: GenericRepository<Subscription>, ISubscriptionRepository
+    public class SubscriptionsRepository : GenericRepository<Subscription>, ISubscriptionRepository
     {
+       
     }
 }

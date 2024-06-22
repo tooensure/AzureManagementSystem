@@ -8,29 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureManagementSystem.Data
+namespace Subscription.Api
 {
     public class UnitOfWork : IUnitOfWork
     {
 
         public UnitOfWork()
         {
-
             ISubscriptionRepository subscriptions = new SubscriptionsRepository();
             IResourcesRepository resources = new ResourcesRepository();
             IUsersRepository users = new UsersRepository();
             IRolesRepository roles = new RolesRepository();
-
-            Subscriptions = new SubscriptionService(subscriptions);
-            Resources = new ResourceService(resources);
-            Roles = new RoleService(roles);
-            Users = new UserService(users);
-
         }
-        public ISubscriptionService Subscriptions { get; }
-        public IResourceService Resources { get; }
-        public IRoleService Roles { get; }
-        public IUserService Users { get; }
+        public ISubscriptionRepository Subscriptions { get; }
+        public IResourcesRepository Resources { get; }
+        public IRolesRepository Roles { get; }
+        public IUsersRepository Users { get; }
 
         public void Dispose()
         {

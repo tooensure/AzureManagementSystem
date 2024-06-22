@@ -10,5 +10,6 @@ namespace AzureManagementSystem.Domain.Repositories
 {
     public class UsersRepository : GenericRepository<User>, IUsersRepository
     {
+ 
     }
 }

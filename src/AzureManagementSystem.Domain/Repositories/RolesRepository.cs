@@ -10,5 +10,6 @@ namespace AzureManagementSystem.Domain.Repositories
 {
     public class RolesRepository : GenericRepository<Role>, IRolesRepository
     {
+ 
     }
 }

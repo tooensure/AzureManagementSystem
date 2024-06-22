@@ -6,15 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AzureManagementSystem.Data
+namespace Subscription.Api
 {
-    public interface IUnitOfWork: IDisposable
+    public interface IUnitOfWork : IDisposable
     {
-        ISubscriptionService Subscriptions { get; }
-
-        IResourceService Resources { get; }
-        IRoleService Roles { get; }
-        IUserService Users { get; }
+        ISubscriptionRepository Subscriptions { get; }
+        IResourcesRepository Resources { get; }
+        IRolesRepository Roles { get; }
+        IUsersRepository Users { get; }
 
         Task<int> SaveChangesAsync();
     }

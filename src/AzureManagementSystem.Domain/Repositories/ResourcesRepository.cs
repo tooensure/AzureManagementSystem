@@ -1,4 +1,5 @@
-﻿using AzureManagementSystem.Core.Interfaces.IRepositories;
+﻿using Azure.Identity;
+using AzureManagementSystem.Core.Interfaces.IRepositories;
 using AzureManagementSystem.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace AzureManagementSystem.Domain.Repositories
 {
     public class ResourcesRepository : GenericRepository<Resource>, IResourcesRepository
     {
-
+ 
     }
 }
