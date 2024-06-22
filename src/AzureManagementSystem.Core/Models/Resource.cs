@@ -16,6 +16,8 @@ namespace AzureManagementSystem.Core.Models
         public string Name { get; set; }
 
         public string? Description { get; set; }
+        public int SubscriptionId { get; set; } // Foreign key to Subscription table
+        public Subscription Subscription { get; set; } // Navigation property
 
         // Other properties specific to your resources:
         // ...

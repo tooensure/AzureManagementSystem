@@ -1,4 +1,6 @@
-﻿using AzureManagementSystem.Core.Interfaces.IRepositories;
+﻿using Azure.Identity;
+using Azure.ResourceManager;
+using AzureManagementSystem.Core.Interfaces.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,12 @@ namespace AzureManagementSystem.Domain.Repositories
 {
     public abstract class GenericRepository<T> : IRepository<T> where T : class
     {
+        private ArmClient _client;
+        protected GenericRepository(ManagedIdentityCredential credential)
+        {
+            _client = new ArmClient(credential);
+            
+        }
         public Task<T> CreateAsync(T entity)
         {
             throw new NotImplementedException();

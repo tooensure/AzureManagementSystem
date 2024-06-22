@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AzureManagementSystem.Core\AzureManagementSystem.Core.csproj" />
+    <ProjectReference Include="..\AzureManagementSystem.Domain\AzureManagementSystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>

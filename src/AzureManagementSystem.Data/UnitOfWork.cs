@@ -16,15 +16,18 @@ namespace AzureManagementSystem.Data
         public UnitOfWork()
         {
 
+            ISubscriptionRepository subscriptions = new SubscriptionsRepository();
             IResourcesRepository resources = new ResourcesRepository();
             IUsersRepository users = new UsersRepository();
             IRolesRepository roles = new RolesRepository();
 
+            Subscriptions = new SubscriptionService(subscriptions);
             Resources = new ResourceService(resources);
             Roles = new RoleService(roles);
             Users = new UserService(users);
 
         }
+        public ISubscriptionService Subscriptions { get; }
         public IResourceService Resources { get; }
         public IRoleService Roles { get; }
         public IUserService Users { get; }

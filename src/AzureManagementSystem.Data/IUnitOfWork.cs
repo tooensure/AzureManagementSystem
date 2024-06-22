@@ -10,6 +10,7 @@ namespace AzureManagementSystem.Data
 {
     public interface IUnitOfWork: IDisposable
     {
+        ISubscriptionService Subscriptions { get; }
 
         IResourceService Resources { get; }
         IRoleService Roles { get; }
