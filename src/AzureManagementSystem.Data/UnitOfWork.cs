@@ -1,6 +1,5 @@
 ﻿using AzureManagementSystem.Core.Interfaces.IRepositories;
 using AzureManagementSystem.Core.Interfaces.IServices;
-using AzureManagementSystem.Data.Repositories;
 using AzureManagementSystem.Data.Services;
 using AzureManagementSystem.Domain.Repositories;
 using System;
