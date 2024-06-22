@@ -6,7 +6,9 @@ Write-Host "Resource Groups:"
 $resourceGroups | Select-Object Name
 
 # Prompt the user for confirmation before deleting
-if ($Confirm -ne "Y") {
+$confirm = Read-Host "Are you sure you want to delete all resource groups? (Y/N)"
+
+if ($confirm -ne "Y" -and $confirm -ne "y") {
   Write-Host "Deletion canceled."
   exit
 }
