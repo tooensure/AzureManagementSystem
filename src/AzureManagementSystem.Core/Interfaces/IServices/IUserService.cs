@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace AzureManagementSystem.Core.Interfaces.IServices
 {
-    public interface IResourceService: IService<Resource>
+    public interface IUserService: IService<User>
     {
+
     }
 }
