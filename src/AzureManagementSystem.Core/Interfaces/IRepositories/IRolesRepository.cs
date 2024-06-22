@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AzureManagementSystem.Core.Interfaces.IRepositories
 {
-    public interface IResourcesRepository: IRepository<Resource>
+    public interface IRolesRepository: IRepository<Role>
     {
     }
 }
